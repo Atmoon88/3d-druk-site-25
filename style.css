@@ -1,0 +1,125 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('assets/background.PNG') !important;
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;  
+}
+
+header {
+  background: linear-gradient(to right, #62cdff, #02ff91);
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  margin: 0;
+  font-size: 24px;
+}
+
+ 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.product-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+.product-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.product-info {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkred;
+}
+.gallery {
+    position: relative;
+    max-width: 100%;
+    margin-top: 10px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+.gallery .prev, .gallery .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    margin-top: -20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(24, 23, 23, 0.5);
+    border-radius: 50%;
+     backdrop-filter: blur(3px); 
+}
+
+
+.gallery .prev { left: 10px; }
+.gallery .next { right: 10px; }
+iframe {
+    width: 100%;
+    height: 315px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    .container { flex-direction: column; }
+    .product-image, .product-info { min-width: 100%; }
+}
+.cards {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+  justify-content: space-between; 
+  gap:  0px;
+  margin:  0px 0;
+  padding: 0 0px;
+  max-width: 1200px;
+}
+
+
+
+.card h3 {
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02); /* трохи збільшує замість зсуву */
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+ .gallery img[src=""] {
+  display: none;
+}
+
+header {
+  background: linear-gradient(to right, #62cdff, #02ff91) !important;
+}
+
+ 
+
+ 
+

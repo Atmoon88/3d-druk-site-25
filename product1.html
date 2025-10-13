@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лійка душова — товар 1</title>
+  <link rel="stylesheet" href="assets/product.css">
+</head>
+<body>
+  <div class="header">
+    <a class="back" href="index.html">← Назад</a>
+    <div style="opacity:.85">Сторінка товару № 1</div>
+  </div>
+
+  <div class="wrap">
+    <div class="card">
+
+      <!-- ЛІВА: велике фото + відео -->
+      <div class="gallery">
+    <div class="slides">
+      <img src="images/product12_1.PNG" alt="Фото товару 1">
+      <img src="images/product12_2.PNG" alt="Фото товару 2">
+      <img src="images/product12_3.PNG" alt="Фото товару 3">
+      </div>
+      
+    
+  
+
+    <div class="nav">
+            <button class="prev" aria-label="Попереднє">‹</button>
+            <button class="next" aria-label="Наступне">›</button>
+          </div>
+        </div>
+
+      <!-- ПРАВА: інформація -->
+      <div class="info">
+        <h1 contenteditable="true">продукт 1</h1>
+        <div class="price" contenteditable="true">120 грн</div>
+        <div class="desc" contenteditable="true">
+          Тут можна редагувати опис товару. Наприклад: матеріал, розмір, різьба, колір, гарантія тощо.
+        </div>
+        <p>Розмір - 220*165мм</p>
+    <p>Кольори - різні</p>
+    <p>Різьба - стандарт</p>
+    <p>Матеріал - пластик</p>
+    <p>Конструкція - нерозбірна</p>
+        <div class="meta">
+          <span class="tag">В наявності</span>
+          <span class="tag">Самовивіз / Нова пошта</span>
+          <span class="tag">Оплата при отриманні</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Видаляє порожні .slides без зображень
+  document.querySelectorAll(".slides").forEach(slide => {
+    if (!slide.querySelector("img")) {
+      slide.remove();
+    }
+  });
+});
+</script>
+
+  <script src="assets/product.js"></script>
+</body>
+</html>
