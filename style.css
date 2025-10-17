@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background-image: url('assets/background.PNG') !important;
+  background-image: url('assets/background.png') !important;
    background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
