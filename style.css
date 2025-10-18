@@ -120,64 +120,6 @@ header {
 }
 
  
-/* 🟢 Новий адаптивний стиль для каталогу */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* 2 картки в ряд */
-  gap: 15px;
-  padding: 20px;
-  justify-items: center;
-}
-
-.gallery-item {
-  background-color: #2f2f2f;
-  border: 1px solid #00ffaa;
-  border-radius: 12px;
-  overflow: hidden;
-  text-align: center;
-  padding: 10px;
-  width: 100%;
-  max-width: 200px; /* щоб картки не розтягувались */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover {
-  transform: scale(1.03);
-}
-
-.gallery-item img,
-.gallery-item .gallery-zoom {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.gallery-item p {
-  margin-top: 8px;
-  color: #e6e6e6;
-  font-size: 14px;
-  line-height: 1.2;
-}
-
-/* 🟣 Мобільна адаптація */
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-
-  .gallery-item {
-    padding: 8px;
-    max-width: 100%;
-  }
-
-  .gallery-item p {
-    font-size: 13px;
-  }
-}
-
-
 
  
 

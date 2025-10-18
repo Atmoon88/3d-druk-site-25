@@ -615,69 +615,6 @@ document.addEventListener("scroll", function () {
 <!-- Improved Chatbot Styling -->
 <style></style></span></body></html>
 
-<!-- Telegram Floating Button -->
-<div class="telegram-chat">
-  <a href="https://t.me/Manager_Katet" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" />
-  </a>
-</div>
-
-<style>
-.telegram-chat {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  background: #29AAE7;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease, opacity 0.4s ease;
-  opacity: 0;
-  transform: translateY(100px);
-}
-
-.telegram-chat.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.telegram-chat img {
-  width: 36px;
-  height: 36px;
-}
-
-/* 📱 На мобільних – завжди видно */
-@media (max-width: 768px) {
-  .telegram-chat {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-}
-</style>
-
-<script>
-document.addEventListener("scroll", function () {
-  const scrollPosition = window.scrollY + window.innerHeight;
-  const totalHeight = document.documentElement.scrollHeight;
-  const widget = document.querySelector(".telegram-chat");
-
-  // показується лише в кінці сторінки на десктопі
-  if (window.innerWidth > 768) {
-    if (scrollPosition >= totalHeight - 50) {
-      widget.classList.add("visible");
-    } else {
-      widget.classList.remove("visible");
-    }
-  }
-});
-</script>
-
-
 <script>
   const cards = document.querySelectorAll('.card');
 
