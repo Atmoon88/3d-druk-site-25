@@ -4,10 +4,6 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-<link rel="stylesheet" href="style.css?v=2">
-
-
-
 <title>3D Друк Pro</title>
 
 <style>
@@ -556,6 +552,49 @@
     }
 }
 </style>
+
+
+<style>
+/* 🔹 Адаптація каталогу під телефон (2 товари в ряд) */
+@media (max-width: 768px) {
+  .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; /* дві колонки */
+    gap: 15px !important;
+    padding: 15px !important;
+    justify-items: center;
+  }
+
+  .gallery-item {
+    width: 100%;
+    max-width: 180px;
+    background-color: #3f3f3f;
+    border: 1px solid #1aff00;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .gallery-item .gallery-zoom {
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+    border-radius: 8px;
+  }
+
+  .gallery-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #e6e6e6;
+    line-height: 1.2;
+  }
+}
+</style>
+
+
+
 <footer style="text-align:center; padding:20px; font-size:14px; color:white; background: linear-gradient(to right, #29AAE7, #35B6B4);">
     Всі права захищені
 </footer>
