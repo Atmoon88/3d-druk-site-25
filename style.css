@@ -120,22 +120,6 @@ header {
 }
 
  
-/* 🔹 Приховати певні блоки в мобільній версії */
-@media (max-width: 768px) {
-  /* ховає Telegram-вікно */
-  .telegram-chat {
-    display: none !important;
-  }
-
-  /* ховає 4 великі вікна з категоріями */
-  .category-block,  /* якщо є загальний клас */
-  .gallery-item:nth-child(1),
-  .gallery-item:nth-child(2),
-  .gallery-item:nth-child(3),
-  .gallery-item:nth-child(4) {
-    display: none !important;
-  }
-}
 
  
 
