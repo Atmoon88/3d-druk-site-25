@@ -119,20 +119,20 @@ header {
   background: linear-gradient(to right, #62cdff, #02ff91) !important;
 }
 
- 
-
- 
-/* 🔹 Сховати Telegram-вікно і 4 "карти" з описами в мобільній версії */
-@media (max-width: 768px) {
+ /* 🔹 Ховає Telegram-вікно і 4 нижні картки на мобільній версії */
+@media screen and (max-width: 768px) {
 
   /* Telegram-вікно */
   .telegram-chat {
     display: none !important;
   }
 
-  /* 4 блоки з класом .card */
-  .card.visible {
+  /* Чотири картки внизу */
+  .services .card {
     display: none !important;
   }
 }
+
+
+ 
 
