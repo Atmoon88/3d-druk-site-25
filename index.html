@@ -664,6 +664,56 @@ document.addEventListener("scroll", function () {
 });
 </script>
 
+
+<style>
+@media (max-width: 768px) {
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* прибирає горизонтальну прокрутку */
+  }
+
+  /* 4 блоки у секції "services" по 2 в ряд */
+  .services {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    padding: 15px !important;
+    justify-items: center;
+  }
+
+  .services .card {
+    width: 100%;
+    max-width: 180px;
+    text-align: center;
+    background: #3f3f3f;
+    border: 1px solid #00ffaa;
+    border-radius: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  /* Telegram блок у самому низу */
+  .telegram-widget {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: auto;
+    transform: none;
+    opacity: 1;
+  }
+
+  /* Підгонка текстів під мобільний */
+  .card h3 {
+    font-size: 16px;
+  }
+  .card p {
+    font-size: 13px;
+  }
+}
+</style>
+
+
 <!-- Improved Chatbot Styling -->
 <style></style></span></body></html>
 
