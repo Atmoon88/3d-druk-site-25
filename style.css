@@ -118,14 +118,7 @@ iframe {
 header {
   background: linear-gradient(to right, #62cdff, #02ff91) !important;
 }
-
-  /* 🔹 Приховати Telegram вікно на мобільних */
-@media (max-width: 768px) {
-  .telegram-widget,
-  .telegram-chat {
-    display: none !important;
-  }
-}
+ 
 
 
 
